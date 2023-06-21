@@ -1,1 +1,14 @@
-<p>introducao works!</p>
+<div [ngStyle]="{ 'background-color': 'black' }">
+  <div class="conteiner introducao">
+    <div>
+      <img src="assets/intro4.jpg" alt="" />
+    </div>
+    <div>
+      <h1 [ngClass]="tituloPrincipal">
+        Ola, eu sou <br /><span class="introDestaque">{{ name }}</span
+        ><br />{{ job }}
+      </h1>
+      <p class="paragrafoIntro c0">Meu Portifólio</p>
+    </div>
+  </div>
+</div>
