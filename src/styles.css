@@ -1,1 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* PALETA PRIMĆRIA */
+  --p1: #29c74b;
+  --p2: #75ea3d;
+  --p3: #9bff6b;
+  --p4: #e5f6dc;
+
+  /* TONS DE CINZA */
+  --c0: #ffffff;
+  --c1: #f7f7f7;
+  --c2: #ededed;
+  --c3: #dedede;
+  --c4: #cccccc;
+  --c5: #b2b2b2;
+  --c6: #9c9c9c;
+  --c7: #717171;
+  --c8: #595959;
+  --c9: #404040;
+  --c10: #3e3e3e;
+  --c11: #111111;
+  --c12: #000000;
+
+  --gradiente-btn: linear-gradient(#29c74b, #75ea3d);
+  --gradiente-btn-hover: linear-gradient(#179d34, #0a7a23);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.conteiner {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.titulo {
+  max-width: 3.5ch;
+  word-break: break-all;
+  text-transform: uppercase;
+  font: 700 8rem/1 "Poppins", sans-serif;
+  color: rgba(78, 78, 78, 0.3);
+}
+
+/* BOTĆO */
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--gradiente-btn-hover);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); /* X - Y - BLUR - TAM CRESCE EM RELACAO AO ELEMENTO - COR */
+  text-transform: uppercase;
+  color: var(--p4);
+  font: 600 1.125rem/1.33 "Poppins", sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--gradiente-btn);
+}
+
+.btn.secundario {
+  font: 600 0.9rem/1.33 "Poppins", sans-serif;
+  background: var(--c10);
+  color: var(--c2);
+}
+
+.btn.secundario:hover {
+  background: var(--c7);
+  color: var(--c2);
+}
+
+.sectionTitulo {
+  font: 600 1.5rem/1.125 Poppins, sans-serif;
+  color: var(--c0);
+  padding: 50px 0;
+}
+
+.sectionTitulo span {
+  color: var(--p1);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
