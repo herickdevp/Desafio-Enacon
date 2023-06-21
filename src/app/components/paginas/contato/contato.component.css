@@ -1,0 +1,73 @@
+.contato-bg {
+  background: linear-gradient(var(--c11) 500px, var(--c1) 0px);
+  padding-bottom: 150px;
+}
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-logo,
+.contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-logo {
+  border-radius: 5px 0 0 5px;
+  background: var(--c12);
+}
+
+.contato-logo img {
+  margin-bottom: 300px;
+}
+
+.contato-formulario {
+  border-radius: 0 5px 5px 0;
+  background: var(--c0);
+}
+
+/* FORMULARIO */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--c1);
+  border: 1px solid var(--c2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--p1);
+  background: var(--c0);
+  box-shadow: 0 0 0 2px rgb(182, 251, 198);
+}
+
+.validationError p {
+  color: #dc3545;
+  margin-top: 0.4rem;
+  border-left: 3px solid #dc3545;
+  padding-left: 0.2rem;
+}
