@@ -5,6 +5,4 @@ import { Component, Input } from '@angular/core';
   templateUrl: './cta.component.html',
   styleUrls: ['./cta.component.css'],
 })
-export class CtaComponent {
-  @Input() name: String = '';
-}
+export class CtaComponent {}

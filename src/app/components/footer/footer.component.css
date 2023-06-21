@@ -1,0 +1,7 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 10px 100px;
+  text-align: center;
+}
