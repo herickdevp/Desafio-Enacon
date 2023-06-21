@@ -12,6 +12,7 @@ import { FormacaoComponent } from './components/home/formacao/formacao.component
 import { ExperienciaComponent } from './components/paginas/experiencia/experiencia.component';
 import { ContatoComponent } from './components/paginas/contato/contato.component';
 import { HomeComponent } from './components/home/home/home.component';
+import { ExtraComponent } from './components/paginas/extra/extra.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './components/home/home/home.component';
     FormacaoComponent,
     ExperienciaComponent,
     ContatoComponent,
-    HomeComponent
+    HomeComponent,
+    ExtraComponent
   ],
   imports: [
     BrowserModule,

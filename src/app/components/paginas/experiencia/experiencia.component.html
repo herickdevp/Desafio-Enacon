@@ -1,4 +1,31 @@
 <app-header></app-header>
-<p>experiencia works!</p>
+<div class="sectionTitulo-bg" [ngStyle]="{ 'background-color': '#111111' }">
+  <div class="sectionTitulo conteiner">
+    <h1>Experiências Profissionais<span>.</span></h1>
+  </div>
+</div>
+
+<div class="experiencia conteiner">
+  <ul>
+    <li *ngFor="let experiencia of experienicias" class="experienciaLista">
+      <h3 class="exptitle">
+        {{ experiencia.dataInicio }} - {{ experiencia.dataFim }} -
+        {{ experiencia.empresa }}
+      </h3>
+      <span>{{ experiencia.cargo }}</span>
+      <p>{{ experiencia.descricao }}</p>
+    </li>
+  </ul>
+
+  <div class="maisInfos">
+    <app-extra (showElements)="onshowElements()"></app-extra>
+    <div *ngIf="maisInfos" class="maisInfosConteudo">
+      <p>dasdasdasasd</p>
+      <p>dasdasdasdasdasdasddasasd</p>
+      <p>dasdasdasadasdsasd</p>
+      <p>dasdasdasasdasasd</p>
+    </div>
+  </div>
+</div>
 <app-cta></app-cta>
 <app-footer></app-footer>
