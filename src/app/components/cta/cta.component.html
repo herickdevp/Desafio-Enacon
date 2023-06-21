@@ -1,1 +1,23 @@
-<p>cta works!</p>
+<div [ngStyle]="{ 'background-color': 'black', color: 'white' }">
+  <div class="contato conteiner">
+    <p class="contatoText">
+      Estou disponível para novos projetos. Entre em contato e marcamos uma
+      reunião.
+    </p>
+
+    <div>
+      <a class="btn" routerLink="/contato">entre em contato</a>
+    </div>
+
+    <p>{{ name }} © 2023 - Todos os Direitos Reservados. <span></span></p>
+    <p>
+      Desenvolvido por
+      <a
+        class="p1"
+        href="https://www.linkedin.com/in/herick-silva-36b440134/"
+        target="_blank"
+        >Herick Silva</a
+      >
+    </p>
+  </div>
+</div>
