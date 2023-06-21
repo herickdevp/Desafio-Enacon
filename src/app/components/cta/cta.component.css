@@ -1,0 +1,27 @@
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 100px 20px 100px 20px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+
+.contato::before {
+  content: "";
+  width: 128px;
+  height: 128px;
+  background: url(../../../assets/detalhe-intro.svg) no-repeat center;
+  position: absolute;
+  top: -64px;
+}
+.contatoText {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+  color: var(--c5);
+}
+
+.rodape {
+  grid-column: 1/4;
+}

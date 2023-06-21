@@ -1,0 +1,45 @@
+.experiencia {
+  padding: 50px 0;
+}
+
+.experienciaLista {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--c5);
+  padding-bottom: 30px;
+}
+
+.experienciaLista h3 {
+  font: 600 1.125rem/1.33 Poppins, sans-serif;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.experienciaLista h3::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  top: 7px;
+  left: -22px;
+}
+
+.experienciaLista span {
+  display: inline-block;
+  font: 600 1rem/1.33 Poppins, sans-serif;
+  margin-bottom: 10px;
+}
+
+.experienciaLista p {
+  font: 400 1rem/1.5 Roboto, sans-serif;
+  color: var(--c9);
+}
+
+.maisInfos {
+  padding: 0 0 50px 0;
+}
+
+.maisInfosConteudo {
+  margin-top: 30px;
+}

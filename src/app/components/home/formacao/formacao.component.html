@@ -1,1 +1,41 @@
-<p>formacao works!</p>
+<div [ngStyle]="{ 'background-color': '#111111', color: 'white' }">
+  <div class="formacao conteiner">
+    <h2 class="titulo">{{ sectionFormacao }}</h2>
+
+    <div>
+      <p class="descricaoSection">
+        Desenvolvo projetos em <strong>HTML</strong>, <strong>CSS</strong> e
+        <strong>JavaScript</strong>. Para aplicações web, também realizo a parte
+        de <strong>UI Design</strong> do projeto.
+      </p>
+
+      <ul class="formacaoLista">
+        <li *ngFor="let formacao of formacoes">
+          <span>{{ formacao.tipo }}</span>
+          <h3>{{ formacao.titulo }}</h3>
+          <p>{{ formacao.instituicao }}</p>
+        </li>
+      </ul>
+
+      <div class="cursos">
+        <h3>CURSOS INTENSIVOS</h3>
+        <ul class="cursosLista">
+          <li *ngFor="let curso of cursos">
+            {{ curso.nomeCurso }} {{ curso.status }}
+            <strong> {{ curso.cargaHoraria }}</strong>
+          </li>
+        </ul>
+      </div>
+
+      <div class="linguagens">
+        <h3>LINGUAGENS DE PROGRAMAÇÃO</h3>
+        <ul class="cursosLista">
+          <li *ngFor="let linguagem of linguagens">
+            {{ linguagem.nomeCurso }}
+            <strong> {{ linguagem.tempo }}</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

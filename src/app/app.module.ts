@@ -12,6 +12,10 @@ import { FormacaoComponent } from './components/home/formacao/formacao.component
 import { ExperienciaComponent } from './components/paginas/experiencia/experiencia.component';
 import { ContatoComponent } from './components/paginas/contato/contato.component';
 import { HomeComponent } from './components/home/home/home.component';
+import { ExtraComponent } from './components/paginas/extra/extra.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,17 @@ import { HomeComponent } from './components/home/home/home.component';
     FormacaoComponent,
     ExperienciaComponent,
     ContatoComponent,
-    HomeComponent
+    HomeComponent,
+    ExtraComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
