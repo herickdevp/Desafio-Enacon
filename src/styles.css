@@ -126,3 +126,9 @@ body {
     color: #141414;
   }
 }
+
+@media (max-width: 800px) {
+  .sectionTitulo {
+    font: 600 1rem/1.125 Poppins, sans-serif;
+  }
+}

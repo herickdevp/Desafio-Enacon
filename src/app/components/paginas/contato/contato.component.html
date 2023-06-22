@@ -1,81 +1,70 @@
 <app-header></app-header>
 <div class="contato-bg">
-  <div class="conteiner">
-    <div class="sectionTitulo-bg" [ngStyle]="{ 'background-color': '#111111' }">
-      <div class="sectionTitulo conteiner">
-        <h1>Entre em contato<span>.</span></h1>
-      </div>
+  <div class="sectionTitulo-bg" [ngStyle]="{ 'background-color': '#111111' }">
+    <div class="sectionTitulo conteiner">
+      <h1>Entre em contato<span>.</span></h1>
     </div>
+  </div>
 
-    <div class="conteiner">
-      <div class="contato conteiner">
-        <section class="contato-logo">
-          <img src="assets/H.svg" alt="" />
-          <p [ngStyle]="{ color: 'white' }">
-            Desde já<br />Agradeço o contato!
-          </p>
-        </section>
+  <div class="contato conteiner">
+    <section class="contato-logo">
+      <img src="assets/H.svg" alt="" />
+      <p [ngStyle]="{ color: 'white' }">Desde já<br />Agradeço o contato!</p>
+    </section>
 
-        <section class="contato-formulario" aria-label="Formulario">
-          <form
-            class="form"
-            #formDir="ngForm"
-            (ngSubmit)="submit()"
-            [formGroup]="contactForm"
-          >
-            <div>
-              <label for="nome">Nome</label>
-              <input type="text" name="nome" id="nome" placeholder="Seu nome" />
-            </div>
-            <div>
-              <label for="telefone">Telefone</label>
-              <input
-                type="text"
-                name="telefone"
-                id="telefone"
-                placeholder="(00) 00000-0000"
-              />
-            </div>
-            <div class="col-2">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                formControlName="email"
-                placeholder="contato@email.com"
-              />
-            </div>
-            <div
-              *ngIf="email.invalid && formDir.submitted"
-              class="validationError"
-            >
-              <p *ngIf="email.errors?.['required']">O Email é obrigatório!</p>
-            </div>
-            <div class="col-2">
-              <label for="mensagem">Mensagem</label>
-              <textarea
-                rows="5"
-                type="mensagem"
-                name="mensagem"
-                id="mensagem"
-                formControlName="mensagem"
-                placeholder="O que você precisa?"
-              ></textarea>
-            </div>
-            <div
-              *ngIf="mensagem.invalid && formDir.submitted"
-              class="validationError"
-            >
-              <p *ngIf="mensagem.errors?.['required']">
-                A Mensagem é obrigatória!
-              </p>
-            </div>
-            <button type="submit" class="btn col-2">Enviar mensagem</button>
-          </form>
-        </section>
-      </div>
-    </div>
+    <section class="contato-formulario" aria-label="Formulario">
+      <form
+        class="form"
+        #formDir="ngForm"
+        (ngSubmit)="submit()"
+        [formGroup]="contactForm"
+      >
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Seu nome" />
+        </div>
+        <div>
+          <label for="telefone">Telefone</label>
+          <input
+            type="text"
+            name="telefone"
+            id="telefone"
+            placeholder="(00) 00000-0000"
+          />
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            formControlName="email"
+            placeholder="contato@email.com"
+          />
+        </div>
+        <div *ngIf="email.invalid && formDir.submitted" class="validationError">
+          <p *ngIf="email.errors?.['required']">O Email é obrigatório!</p>
+        </div>
+        <div class="col-2">
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            rows="5"
+            type="mensagem"
+            name="mensagem"
+            id="mensagem"
+            formControlName="mensagem"
+            placeholder="O que você precisa?"
+          ></textarea>
+        </div>
+        <div
+          *ngIf="mensagem.invalid && formDir.submitted"
+          class="validationError"
+        >
+          <p *ngIf="mensagem.errors?.['required']">A Mensagem é obrigatória!</p>
+        </div>
+        <button type="submit" class="btn col-2">Enviar mensagem</button>
+      </form>
+    </section>
   </div>
 </div>
 

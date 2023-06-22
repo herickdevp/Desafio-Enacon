@@ -5,3 +5,10 @@
   padding: 10px 100px;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
