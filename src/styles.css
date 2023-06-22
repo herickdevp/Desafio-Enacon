@@ -35,6 +35,7 @@ body {
 
 .conteiner {
   margin: 0 auto;
+  padding: 50px 20px;
   max-width: 1200px;
 }
 .titulo {
@@ -102,7 +103,7 @@ li {
 
 img {
   max-width: 100%;
-  display: block;
+  /* display: block; */
 }
 
 a {
