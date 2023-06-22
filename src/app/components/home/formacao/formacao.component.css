@@ -108,3 +108,30 @@
   left: -38px;
   display: block;
 }
+
+@media (max-width: 800px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .tformacao {
+    color: var(--c0);
+  }
+  .ponto {
+    color: var(--p1);
+  }
+  .descricaoSection {
+    font: 400 1.2rem/1.5 "Roboto", sans-serif;
+  }
+  .cursos h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+  .linguagens {
+    margin-bottom: 50px;
+  }
+  .linguagens h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}

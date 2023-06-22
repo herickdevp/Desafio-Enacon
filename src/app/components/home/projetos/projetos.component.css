@@ -46,3 +46,26 @@
 .descricaoSection strong {
   color: var(--c12);
 }
+
+.ponto {
+  color: transparent;
+}
+
+@media (max-width: 800px) {
+  .projetos {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .ponto {
+    color: var(--p1);
+  }
+  .descricaoSection {
+    font: 400 1.2rem/1.5 "Roboto", sans-serif;
+  }
+}
+
+@media (max-width: 600px) {
+  .projeto {
+    grid-template-columns: 1fr;
+  }
+}
