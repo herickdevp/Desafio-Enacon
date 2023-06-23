@@ -25,3 +25,9 @@
 .rodape {
   grid-column: 1/4;
 }
+
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+}

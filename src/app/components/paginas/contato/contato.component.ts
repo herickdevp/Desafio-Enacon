@@ -1,4 +1,6 @@
+import { ConApiService } from './../../../con-api.service';
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -8,6 +10,19 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContatoComponent {
   contactForm!: FormGroup;
+
+  constructor(private conApiService: ConApiService) {}
+
+  contatos!: Array<any>;
+
+  Contato() {
+    this.conApiService
+      .mostrarContato()
+      .subscribe((resposta) => (this.contatos = resposta));
+
+    // .then((contato) => console.log(contato))
+    // .catch((error) => console.log('ERROR'));
+  }
 
   ngOnInit(): void {
     this.contactForm = new FormGroup({
@@ -30,6 +45,14 @@ export class ContatoComponent {
     if (this.contactForm.invalid) {
       return;
     }
-    console.log('DEU CERTO');
+    alert('FORMULARIO ENVIADO');
+    location.reload();
   }
 }
+
+// console.log(
+//   this.http.post(
+//     'https://63a59f6af8f3f6d4abfb383d.mockapi.io/api-portfolio/sendEmail',
+//     JSON.stringify(this.contactForm.value)
+//   )
+// );

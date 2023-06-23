@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   userName = 'Herick';
   job = 'Desenvolvedor Front-End';
-  sectionProjetos = 'projetos';
-  sectionFormacao = 'formação';
+  sectionProjetos = 'Projetos';
+  sectionFormacao = 'Formação';
 }

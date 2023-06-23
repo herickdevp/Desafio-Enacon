@@ -1,23 +1,28 @@
 <div class="projetos conteiner">
   <div>
-    <h2 class="titulo">{{ sectionProjetos }}</h2>
+    <h2 class="titulo">{{ sectionProjetos }}<span class="ponto">.</span></h2>
   </div>
   <div>
     <p class="descricaoSection">
-      Desenvolvo projetos em <strong>HTML</strong>, <strong>CSS</strong> e
-      <strong>JavaScript</strong>. Para aplicações web, também realizo a parte
-      de <strong>UI Design</strong> do projeto.
+      Desenvolvo projetos <strong>para aplicações web</strong>. Também realizo a
+      parte de <strong>UI Design</strong> do projeto.
     </p>
 
     <div>
       <ul>
-        <li *ngFor="let projeto of projetos" class="projeto">
-          <span>{{ projeto.ano }}</span>
-          <h3>{{ projeto.nome }}</h3>
-          <p>{{ projeto.funcao }}</p>
-          <p>{{ projeto.descricao }}</p>
-          <p>{{ projeto.linguagens }}</p>
-        </li>
+        <a
+          href="https://github.com/herickdevp"
+          target="_blank"
+          [ngStyle]="{ color: 'black' }"
+        >
+          <li *ngFor="let projeto of projetos" class="projeto">
+            <span>{{ projeto.ano }}</span>
+            <h3>{{ projeto.nome }}</h3>
+            <p>{{ projeto.funcao }}</p>
+            <p>{{ projeto.descricao }}</p>
+            <p>{{ projeto.linguagens }}</p>
+          </li>
+        </a>
       </ul>
     </div>
   </div>

@@ -35,3 +35,38 @@
 .header-menu a:hover::after {
   width: 100%;
 }
+
+/* mobile */
+
+.btnMobile {
+  display: none;
+  position: relative;
+}
+
+.menuMobile {
+  background: var(--c11);
+  border-radius: 4px 0px 4px 4px;
+  position: absolute;
+  left: -80px;
+  top: 40px;
+  transition: 0.9s;
+}
+
+.menuMobile a {
+  color: var(--c0);
+  padding: 9px 14px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .btnMobile {
+    display: block;
+  }
+  .header-menu {
+    display: none;
+  }
+  .mobile {
+    cursor: pointer;
+    display: block;
+  }
+}
