@@ -18,31 +18,71 @@ export class ExperienciaComponent {
       empresa: 'TECPOP',
       cargo: 'Coordenador Geral',
       descricao:
-        'asdyasuydhausyd uays xuas duas duyasduays duyas duyas ud aus duyas ud asud uas duas duya sud as0ud aslkj dkpas dkas kd askd jaks dasasdbjas djas ',
+        'Coordenar colaboradores para a otimização e melhora das atividades exercidas no polo; Articular com empresas e instituições para obtenção de parcerias; Gerir atividades pedagógicas para o desenvolvimento das capacitações oferecias pelo polo.',
     },
     {
-      dataInicio: '02/2022',
-      dataFim: 'Atual',
-      empresa: 'TECPOP',
+      dataInicio: '03/2019',
+      dataFim: '04/2020',
+      empresa: 'FAPEMIG',
       cargo: 'Coordenador Geral',
       descricao:
-        'asdyasuydhausyd uays xuas duas duyasduays duyas duyas ud aus duyas ud asud uas duas duya sud as0ud aslkj dkpas dkas kd askd jaks dasasdbjas djas ',
+        'Gerir atividades administrativas e pedagógicas; Coordenar planos de ação da equipe; Articular com instituições parceiras com o objetivo de prover as necessidades materiais, de pessoal e de ampliação do polo; Aperfeiçoar política organizacional em busca de desenvolvimento e melhores resultados.',
     },
     {
-      dataInicio: '02/2022',
-      dataFim: 'Atual',
-      empresa: 'TECPOP',
-      cargo: 'Coordenador Geral',
+      dataInicio: '05/2017',
+      dataFim: '03/2019',
+      empresa: 'FAPEMIG',
+      cargo: 'Agente Educacional Tecnológico',
       descricao:
-        'asdyasuydhausyd uays xuas duas duyasduays duyas duyas ud aus duyas ud asud uas duas duya sud as0ud aslkj dkpas dkas kd askd jaks dasasdbjas djas ',
+        'Auxiliar administrativo; Elaboração e análise de documentos e planilhas; Manutenção em computadores; Atendimento ao público; Professor de informática.',
+    },
+  ];
+
+  extras = [
+    {
+      curso: 'Inglês',
+      instituicao: 'Intermediário',
+      cargaHoraria: '50 horas',
     },
     {
-      dataInicio: '02/2022',
-      dataFim: 'Atual',
-      empresa: 'TECPOP',
-      cargo: 'Coordenador Geral',
-      descricao:
-        'asdyasuydhausyd uays xuas duas duyasduays duyas duyas ud aus duyas ud asud uas duas duya sud as0ud aslkj dkpas dkas kd askd jaks dasasdbjas djas ',
+      curso: 'Excel avançado',
+      instituicao: 'UAITEC',
+      cargaHoraria: '40 horas',
+    },
+    {
+      curso: 'Word avançado',
+      instituicao: 'UAITEC',
+      cargaHoraria: '40 horas',
+    },
+    {
+      curso: 'Power Point',
+      instituicao: 'UAITEC',
+      cargaHoraria: '40 horas',
+    },
+    {
+      curso: 'Informática avançada',
+      instituicao: 'Interativa Cursos especializados',
+      cargaHoraria: '150 horas',
+    },
+    {
+      curso: 'AutoCAD',
+      instituicao: 'MicroWay',
+      cargaHoraria: '100 horas',
+    },
+    {
+      curso: 'Home Design',
+      instituicao: 'MicroWay',
+      cargaHoraria: '50 horas',
+    },
+    {
+      curso: 'Legislação Trabalhista',
+      instituicao: 'UAITEC',
+      cargaHoraria: '14 horas.',
+    },
+    {
+      curso: 'Departamento Pessoal',
+      instituicao: 'UAITEC',
+      cargaHoraria: '30 horas',
     },
   ];
 }

@@ -8,7 +8,7 @@
 <div class="experiencia conteiner">
   <ul>
     <li *ngFor="let experiencia of experienicias" class="experienciaLista">
-      <h3 class="exptitle">
+      <h3>
         {{ experiencia.dataInicio }} - {{ experiencia.dataFim }} -
         {{ experiencia.empresa }}
       </h3>
@@ -20,10 +20,13 @@
   <div class="maisInfos">
     <app-extra (showElements)="onshowElements()"></app-extra>
     <div *ngIf="maisInfos" class="maisInfosConteudo">
-      <p>dasdasdasasd</p>
-      <p>dasdasdasdasdasdasddasasd</p>
-      <p>dasdasdasadasdsasd</p>
-      <p>dasdasdasasdasasd</p>
+      <h3 class="extraTitulo">QUALIFICAÇÕES E ATIVIDADES COMPLEMENTARES</h3>
+      <ul>
+        <li *ngFor="let extra of extras" class="extraLista">
+          {{ extra.curso }} - {{ extra.instituicao }} -
+          {{ extra.cargaHoraria }}
+        </li>
+      </ul>
     </div>
   </div>
 </div>

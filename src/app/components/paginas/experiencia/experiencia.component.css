@@ -44,7 +44,13 @@
   margin-top: 30px;
 }
 
-@media (max-width: 800px) {
-  .experiencia {
-  }
+.extraLista {
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--c5);
+  padding-bottom: 30px;
+}
+
+.extraTitulo {
+  font: 600 1.125rem/1.33 Poppins, sans-serif;
+  margin-bottom: 30px;
 }

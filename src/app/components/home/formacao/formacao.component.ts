@@ -56,6 +56,10 @@ export class FormacaoComponent {
 
   linguagens = [
     {
+      nomeCurso: 'Angular',
+      tempo: '1 mese',
+    },
+    {
       nomeCurso: 'javaScript',
       tempo: '6 meses',
     },
