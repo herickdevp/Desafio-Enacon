@@ -10,27 +10,27 @@ export class ProjetosComponent {
 
   projetos = [
     {
-      nome: 'Portifólio Pessoal',
+      nome: 'Rede Social Moments',
       ano: '2023',
       descricao:
         'No projeto Portifólio eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript. Além disso, também realizei toda parte de UI Design',
-      funcao: 'Aluno',
-      linguagens: 'HTML, CSS, JavaScript',
+      funcao: 'Desenvolvedor / Aluno',
+      linguagens: 'Angular',
     },
     {
       nome: 'Portifólio Pessoal',
       ano: '2023',
       descricao:
-        'No projeto Portifólio eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript. Além disso, também realizei toda parte de UI Design',
-      funcao: 'Aluno',
-      linguagens: 'HTML, CSS, JavaScript',
+        'No projeto Portifólio eu trabalhei no desenvolvimento completo. Além disso, também realizei toda parte de UI Design',
+      funcao: 'Desenvolvedor',
+      linguagens: 'Angular',
     },
     {
-      nome: 'Portifólio Pessoal',
+      nome: 'Bikcraft',
       ano: '2023',
       descricao:
-        'No projeto Portifólio eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript. Além disso, também realizei toda parte de UI Design',
-      funcao: 'Aluno',
+        'No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript. Sob orientação e aulas do professor André da Origamid.',
+      funcao: 'Desenvolvedor / Aluno',
       linguagens: 'HTML, CSS, JavaScript',
     },
   ];

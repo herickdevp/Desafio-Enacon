@@ -16,37 +16,59 @@ export class FormacaoComponent {
     },
     {
       tipo: 'Tecnologo',
-      titulo: 'Análise e Desenvolvimento de Sistemas',
-      instituicao: 'IFTM',
+      titulo: 'Gestão Financeira',
+      instituicao: 'UNOPAR',
     },
     {
-      tipo: 'Tecnologo',
-      titulo: 'Análise e Desenvolvimento de Sistemas',
-      instituicao: 'IFTM',
+      tipo: 'MBA (Cursando)',
+      titulo: 'Gestão de Pessoas',
+      instituicao: 'UNOPAR',
     },
   ];
 
   cursos = [
     {
-      nomeCurso: 'JavaScript ES6',
+      nomeCurso: 'Angular',
       status: '(Cursando)',
-      cargaHoraria: '36h',
+      cargaHoraria: '7h',
     },
     {
       nomeCurso: 'JavaScript ES6',
       status: '(Cursando)',
-      cargaHoraria: '36h',
+      cargaHoraria: '37h',
     },
     {
-      nomeCurso: 'JavaScript ES6',
-      status: '(Cursando)',
-      cargaHoraria: '36h',
+      nomeCurso: 'Flexbox e Grid Layout',
+      status: '',
+      cargaHoraria: '08h',
+    },
+    {
+      nomeCurso: 'HTML e CSS',
+      status: '',
+      cargaHoraria: '23h',
+    },
+    {
+      nomeCurso: 'UI Desing',
+      status: '',
+      cargaHoraria: '17h',
     },
   ];
 
   linguagens = [
     {
-      nomeCurso: 'HTML 5',
+      nomeCurso: 'javaScript',
+      tempo: '6 meses',
+    },
+    {
+      nomeCurso: 'Python',
+      tempo: '5 meses',
+    },
+    {
+      nomeCurso: 'Java',
+      tempo: '5 meses',
+    },
+    {
+      nomeCurso: 'C++',
       tempo: '1 ano',
     },
   ];

@@ -91,6 +91,9 @@
 }
 
 /* Linguagens */
+.linguagens li {
+  margin-bottom: 20px;
+}
 
 .linguagens h3 {
   margin-bottom: 30px;
