@@ -1,4 +1,3 @@
-import { ConApiService } from './../../con-api.service';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -8,12 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class FooterComponent {
   @Input() name: String = '';
-
-  constructor(private conApiService: ConApiService) {}
-  Contato() {
-    this.conApiService
-      .mostrarContato()
-      .then((contato) => console.log(contato))
-      .catch((error) => console.log('ERROR'));
-  }
 }
