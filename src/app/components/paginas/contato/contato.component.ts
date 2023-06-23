@@ -15,14 +15,14 @@ export class ContatoComponent {
 
   contatos!: Array<any>;
 
-  Contato() {
-    this.conApiService
-      .mostrarContato()
-      .subscribe((resposta) => (this.contatos = resposta));
+  // Contato() {
+  //   this.conApiService
+  //     .mostrarContato()
+  //     .subscribe((resposta) => (this.contatos = resposta));
 
-    // .then((contato) => console.log(contato))
-    // .catch((error) => console.log('ERROR'));
-  }
+  //   // .then((contato) => console.log(contato))
+  //   // .catch((error) => console.log('ERROR'));
+  // }
 
   ngOnInit(): void {
     this.contactForm = new FormGroup({
